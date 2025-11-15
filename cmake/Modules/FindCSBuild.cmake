@@ -37,7 +37,7 @@ endif()
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     set(DotNetCore_PLATFORM "linux")
-if(CMAKE_SYSTEM_NAME STREQUAL "Android")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Android")
     set(DotNetCore_PLATFORM "linux")
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
     set(DotNetCore_PLATFORM "osx")
